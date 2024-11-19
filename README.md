@@ -3,9 +3,7 @@
 ---
 
 ## Developed By  
-**Prakaash**  
-[Portfolio Link](https://prakaash.netlify.app/)  
-
+[**Prakaash**](https://prakaash.netlify.app/)
 ---
 
 ## Date  
