@@ -2,21 +2,15 @@
 **Frontend Developer Assignment | Fluid AI**
 ---
 
-## Developed By  
-[**Prakaash**](https://prakaash.netlify.app/)
+## Developed By : [**Prakaash**](https://prakaash.netlify.app/)
+---
+## Date : **November 19, 2024**
 ---
 
-## Date  
-**November 19, 2024**
-
----
-
-## Project Overview  
-
+## Project Overview 
 This is a simple web application to explore popular movies and search for specific ones using The Movie Database (TMDb) API. The project demonstrates my ability to work with React.js and integrate APIs.
 
 ---
-
 ## Tech Stack  
 
 - **React.js**: For building the user interface.  
@@ -24,7 +18,6 @@ This is a simple web application to explore popular movies and search for specif
 - **Axios**: For making API calls to TMDb.  
 
 ---
-
 ## Features  
 
 1. Display popular movies fetched from TMDb.  
@@ -32,7 +25,6 @@ This is a simple web application to explore popular movies and search for specif
 3. View detailed information about a movie in a modal.
 
 ---
-
 ## Getting Started  
 
 ### Prerequisites  
@@ -44,13 +36,13 @@ This is a simple web application to explore popular movies and search for specif
 
 1. Clone the repository:  
     - git clone https://github.com/Prak-aash/Movie-Finder.git
-    - cd movie-finder-fluid-ai
+    - cd movie-finder
 
 2. Install dependencies:
     - npm install
 
 3. Create a .env file in the root directory and add your TMDb API key:
-    - REACT_APP_TMDB_API_KEY=your_api_key_here
+    - REACT_APP_TMDB_API_KEY=your_api_key
 
 4. Start the development server:
     - npm run dev
