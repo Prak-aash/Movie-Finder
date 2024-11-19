@@ -44,7 +44,7 @@ const App = () => {
   return (
     <div className="bg-black min-h-screen text-white">
       <header className="bg-black p-6 flex justify-between items-center">
-        <div className="flex mt-2 items-center space-x-2">
+        <div className="flex m-2 items-center space-x-2">
           <h1 className="text-3xl font-bold text-gray-800">Movie Finder</h1>
         </div>
         <div className="relative w-full max-w-md mx-auto">
