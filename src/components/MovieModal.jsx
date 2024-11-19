@@ -1,17 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 
 const MovieModal = ({ movie, setModalMovie }) => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const closeModal = () => {
+  const closeModal = useCallback(() => {
     setModalMovie(null);
-  };
-
-  const handleOutsideClick = (e) => {
-    if (e.target.classList.contains('modal-overlay')) {
-      closeModal();
-    }
-  };
+  }, [setModalMovie]);
 
   const formatDate = (date) => {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -26,11 +19,23 @@ const MovieModal = ({ movie, setModalMovie }) => {
   const runtime = movie.runtime ? `${movie.runtime} min` : 'Information not available';
   const language = movie.original_language ? movie.original_language.toUpperCase() : 'Information not available';
 
+  const handleOutsideClick = useCallback((e) => {
+    if (e.target.classList.contains('modal-overlay')) {
+      closeModal();
+    }
+  }, [closeModal]);
+
   useEffect(() => {
     document.addEventListener('click', handleOutsideClick);
-    setIsOpen(true);
+
     return () => {
       document.removeEventListener('click', handleOutsideClick);
+    };
+  }, [handleOutsideClick]);
+
+  useEffect(() => {
+    setIsOpen(true);
+    return () => {
       setIsOpen(false);
     };
   }, []);
